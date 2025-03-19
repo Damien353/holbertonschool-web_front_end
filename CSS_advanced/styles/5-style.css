@@ -40,7 +40,23 @@
     color: var(--color-primary);
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1 {
     font-family: var(--font-family-title);
+    font-size: var(--font-size-xx-large);
+  }
+  
+  h2 {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-x-large);
+  }
+  
+  h3 {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-large);
+  }
+  
+  h4, h5, h6 {
+    font-family: var(--font-family-title);
+    font-size: var(--font-size-medium);
   }
   
