@@ -1,6 +1,6 @@
 /* styles/29-style.css */
 
-/* Mise à jour de la propriété nav-item-link-hover */
+/* Modification de la propriété nav-item-link-hover */
 :root {
     --color-primary: #d73953;
     --color-black: #090909;
@@ -14,10 +14,10 @@
     --nav-item-letter-spacing: 0.4rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
-    --nav-item-link-hover: var(--color-white); /* Valeur corrigée */
+    --nav-item-link-hover: var(--color-white); /* Mise à jour demandée */
 }
 
-/* Navigation */
+/* Style de navigation */
 .nav {
     list-style: none;
     text-align: center;
@@ -39,27 +39,27 @@
     text-decoration: none;
 }
 
-/* Avant pseudo-élément pour .nav-link */
+/* Pseudo-élément before pour .nav-link */
 .nav .nav-link::before {
-    content: ""; /* Nécessaire pour afficher le pseudo-élément */
+    content: ""; /* Nécessaire pour le pseudo-élément */
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--color-white); /* Couleur blanche */
-    width: 0; /* Initialement à 0 */
-    height: 20%; /* Hauteur à 20% */
-    transition: width 0.3s ease;
+    background-color: var(--color-white); /* Fond blanc */
+    width: 0; /* Largeur initiale à 0 */
+    height: 20%; /* Hauteur 20% */
+    transition: all 0.3s ease; /* Transition fluide */
 }
 
-/* État hover pour .nav-item */
+/* Hover sur nav-item */
 .nav-item:hover .nav-link::before {
-    background-color: var(--color-primary); /* Fond primaire au hover */
-    width: 100%; /* Largeur complète au hover */
+    background-color: var(--color-primary); /* Fond primaire */
+    width: 100%; /* Largeur complète */
 }
 
 /* Header */
 .header {
-    padding: 4rem 0 0; /* Padding mis à jour */
+    padding: 4rem 0 0; /* Padding du header */
 }
 
 .header-logo {
@@ -93,7 +93,7 @@
 
 .card-services a {
     display: block;
-    padding: calc(2 * 1rem); /* Padding 2x */
+    padding: calc(2 * 1rem);
     background-color: var(--color-light-grey);
 }
 
@@ -105,30 +105,30 @@
 
 /* Card testimonial */
 .card-testimonial {
-    text-align: center; /* Texte centré */
+    text-align: center;
 }
 
 .card-testimonial .card-avatar {
-    border-radius: 50%; /* Arrondi complet */
+    border-radius: 50%;
     width: 10rem;
     height: 10rem;
 }
 
 .card-testimonial .card-quote cite {
-    display: block; /* Bloc pour cite */
+    display: block;
     padding-top: 1rem;
     color: var(--color-primary);
 }
 
 /* Section hero */
 .section-hero {
-    background-size: 90rem auto; /* Taille du fond */
+    background-size: 90rem auto;
 }
 
 .section-hero .section-title {
-    margin-bottom: 5rem; /* Marge inférieure */
+    margin-bottom: 5rem;
 }
 
 .section-hero .section-inner {
-    padding: 10rem 40rem 2rem 0; /* Padding complet */
+    padding: 10rem 40rem 2rem 0;
 }
