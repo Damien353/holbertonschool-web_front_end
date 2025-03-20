@@ -14,7 +14,7 @@
     --nav-item-letter-spacing: 0.4rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
-    --nav-item-link-hover: var(--color-white); /* Valeur mise à jour */
+    --nav-item-link-hover: var(--color-white); /* Valeur corrigée */
 }
 
 /* Navigation */
@@ -41,29 +41,29 @@
 
 /* Avant pseudo-élément pour .nav-link */
 .nav .nav-link::before {
-    content: ""; /* Contenu vide */
+    content: ""; /* Nécessaire pour afficher le pseudo-élément */
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--color-white); /* Fond blanc */
-    width: 0; /* Largeur initiale à 0 */
-    height: 20%; /* Hauteur 20% */
-    transition: all 0.3s ease;
+    background-color: var(--color-white); /* Couleur blanche */
+    width: 0; /* Initialement à 0 */
+    height: 20%; /* Hauteur à 20% */
+    transition: width 0.3s ease;
 }
 
-/* État hover */
+/* État hover pour .nav-item */
 .nav-item:hover .nav-link::before {
     background-color: var(--color-primary); /* Fond primaire au hover */
-    width: 100%; /* Largeur complète */
+    width: 100%; /* Largeur complète au hover */
 }
 
 /* Header */
 .header {
-    padding: 4rem 0 0; /* Padding du header */
+    padding: 4rem 0 0; /* Padding mis à jour */
 }
 
 .header-logo {
-    position: relative; /* Positionnement relatif */
+    position: relative;
 }
 
 .header-logo a {
@@ -93,7 +93,7 @@
 
 .card-services a {
     display: block;
-    padding: calc(2 * 1rem);
+    padding: calc(2 * 1rem); /* Padding 2x */
     background-color: var(--color-light-grey);
 }
 
@@ -105,17 +105,17 @@
 
 /* Card testimonial */
 .card-testimonial {
-    text-align: center; /* Centrer le texte */
+    text-align: center; /* Texte centré */
 }
 
 .card-testimonial .card-avatar {
-    border-radius: 50%; /* Rayon 50% pour arrondir */
+    border-radius: 50%; /* Arrondi complet */
     width: 10rem;
     height: 10rem;
 }
 
 .card-testimonial .card-quote cite {
-    display: block; /* Niveau bloc */
+    display: block; /* Bloc pour cite */
     padding-top: 1rem;
     color: var(--color-primary);
 }
@@ -130,5 +130,5 @@
 }
 
 .section-hero .section-inner {
-    padding: 10rem 40rem 2rem 0; /* Padding : top, right, bottom, left */
+    padding: 10rem 40rem 2rem 0; /* Padding complet */
 }
