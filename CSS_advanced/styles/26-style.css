@@ -71,7 +71,7 @@ a[href]:active {
     background-color: var(--color-light-grey);
 }
 
-/* Button styles */
+/* Styles des boutons */
 .button {
     display: var(--button-display);
     padding: var(--button-padding);
@@ -87,7 +87,7 @@ a[href]:active {
     text-decoration: var(--button-hover-text-decoration);
 }
 
-/* Section sombre */
+/* Mode sombre */
 [data-section-theme="dark"] {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
@@ -124,21 +124,21 @@ a[href]:active {
     text-decoration: none;
 }
 
-/* Ajouts pour l'exercice 26 */
+/* Ajout pour l'exercice 26 */
 
-/* Style pour card-testimonial */
+/* Cibler card-testimonial */
 .card-testimonial {
     text-align: center;
 }
 
-/* Style pour card-avatar à l'intérieur de card-testimonial */
+/* Cibler card-avatar à l'intérieur de card-testimonial */
 .card-testimonial .card-avatar {
     border-radius: 50%;
-    width: calc(10 * 1rem);
-    height: calc(10 * 1rem);
+    width: 10rem;
+    height: 10rem;
 }
 
-/* Style pour cite à l'intérieur de card-quote dans card-testimonial */
+/* Cibler cite à l'intérieur de card-quote dans card-testimonial */
 .card-testimonial .card-quote cite {
     display: block;
     padding-top: 1rem;
