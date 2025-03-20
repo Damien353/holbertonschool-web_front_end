@@ -14,7 +14,7 @@
     --nav-item-letter-spacing: 0.4rem;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
-    --nav-item-link-hover: var(--color-white); /* Modifié pour color-white */
+    --nav-item-link-hover: var(--color-white); /* Valeur mise à jour */
 }
 
 /* Navigation */
@@ -41,29 +41,29 @@
 
 /* Avant pseudo-élément pour .nav-link */
 .nav .nav-link::before {
-    content: ""; /* Valeur vide */
+    content: ""; /* Contenu vide */
     position: absolute;
     top: 0;
     left: 0;
-    background-color: var(--color-white); /* Couleur de fond blanche */
+    background-color: var(--color-white); /* Fond blanc */
     width: 0; /* Largeur initiale à 0 */
-    height: 20%; /* Hauteur à 20% */
+    height: 20%; /* Hauteur 20% */
     transition: all 0.3s ease;
 }
 
 /* État hover */
 .nav-item:hover .nav-link::before {
-    background-color: var(--color-primary); /* Couleur primaire au hover */
+    background-color: var(--color-primary); /* Fond primaire au hover */
     width: 100%; /* Largeur complète */
 }
 
 /* Header */
 .header {
-    padding: 4rem 0 0;
+    padding: 4rem 0 0; /* Padding du header */
 }
 
 .header-logo {
-    position: relative;
+    position: relative; /* Positionnement relatif */
 }
 
 .header-logo a {
@@ -73,7 +73,7 @@
     left: 0;
 }
 
-/* Footer et autres éléments */
+/* Footer */
 .footer-address {
     color: var(--text-color);
 }
@@ -86,6 +86,7 @@
     fill: var(--text-color);
 }
 
+/* Card services */
 .card-services .card-title {
     margin: 0;
 }
@@ -102,30 +103,32 @@
     text-decoration: none;
 }
 
+/* Card testimonial */
 .card-testimonial {
-    text-align: center;
+    text-align: center; /* Centrer le texte */
 }
 
 .card-testimonial .card-avatar {
-    border-radius: 50%;
+    border-radius: 50%; /* Rayon 50% pour arrondir */
     width: 10rem;
     height: 10rem;
 }
 
 .card-testimonial .card-quote cite {
-    display: block;
+    display: block; /* Niveau bloc */
     padding-top: 1rem;
     color: var(--color-primary);
 }
 
+/* Section hero */
 .section-hero {
-    background-size: 90rem auto;
+    background-size: 90rem auto; /* Taille du fond */
 }
 
 .section-hero .section-title {
-    margin-bottom: 5rem;
+    margin-bottom: 5rem; /* Marge inférieure */
 }
 
 .section-hero .section-inner {
-    padding: 10rem 40rem 2rem 0;
+    padding: 10rem 40rem 2rem 0; /* Padding : top, right, bottom, left */
 }
