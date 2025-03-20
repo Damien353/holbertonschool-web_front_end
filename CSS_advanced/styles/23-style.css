@@ -141,32 +141,26 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%;
 }
 
-/* Section sombre */
+/* Modification pour la section sombre */
 [data-section-theme="dark"] {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background: var(--color-black);
 }
 
-/* Styles pour footer-address */
+/* Ajout pour l'exercice */
+
+/* Style pour la classe footer-address */
 .footer-address {
     color: var(--text-color);
-    font-size: var(--font-size-medium);
 }
 
-/* Styles pour social-link */
+/* Style pour la classe social-link */
 .social-link {
     display: block;
-    color: var(--text-color);
-    text-decoration: none;
-    margin-bottom: 1rem;
 }
 
+/* Style pour les enfants svg de social-link */
 .social-link svg {
     fill: var(--text-color);
-}
-
-/* Assurer que les icônes sont bien alignées */
-.social-link svg {
-    vertical-align: middle;
 }
