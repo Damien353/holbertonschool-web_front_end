@@ -1,0 +1,131 @@
+/* styles/29-style.css */
+
+/* Mise à jour de la propriété nav-item-link-hover */
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --nav-item-font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --nav-item-font-weight: 700;
+    --nav-item-font-size: 1.6rem;
+    --nav-item-letter-spacing: 0.4rem;
+    --nav-item-display: inline-block;
+    --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-white); /* Modifié pour color-white */
+}
+
+/* Navigation */
+.nav {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item {
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+}
+
+.nav-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Avant pseudo-élément pour .nav-link */
+.nav .nav-link::before {
+    content: ""; /* Valeur vide */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white); /* Couleur de fond blanche */
+    width: 0; /* Largeur initiale à 0 */
+    height: 20%; /* Hauteur à 20% */
+    transition: all 0.3s ease;
+}
+
+/* État hover */
+.nav-item:hover .nav-link::before {
+    background-color: var(--color-primary); /* Couleur primaire au hover */
+    width: 100%; /* Largeur complète */
+}
+
+/* Header */
+.header {
+    padding: 4rem 0 0;
+}
+
+.header-logo {
+    position: relative;
+}
+
+.header-logo a {
+    display: inline-block;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+}
+
+/* Footer et autres éléments */
+.footer-address {
+    color: var(--text-color);
+}
+
+.social-link {
+    display: block;
+}
+
+.social-link svg {
+    fill: var(--text-color);
+}
+
+.card-services .card-title {
+    margin: 0;
+}
+
+.card-services a {
+    display: block;
+    padding: calc(2 * 1rem);
+    background-color: var(--color-light-grey);
+}
+
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
+
+.card-testimonial {
+    text-align: center;
+}
+
+.card-testimonial .card-avatar {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+.card-testimonial .card-quote cite {
+    display: block;
+    padding-top: 1rem;
+    color: var(--color-primary);
+}
+
+.section-hero {
+    background-size: 90rem auto;
+}
+
+.section-hero .section-title {
+    margin-bottom: 5rem;
+}
+
+.section-hero .section-inner {
+    padding: 10rem 40rem 2rem 0;
+}
